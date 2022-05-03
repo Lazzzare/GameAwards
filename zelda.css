@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background: url("zelda-background.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.header nav {
+    width: 84%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+}
+
+.header nav ul li {
+    display: inline-block;
+    margin: 20px 10px;
+    list-style: none;
+}
+
+.header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    margin: auto;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 0;
+    height: 2px;
+    background-color: rgb(152, 177, 11);
+    transition: .3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header .logo {
+    width: 150px;
+}
+
+
+.info {
+    margin-left: 8%;
+    margin-top: 15%;
+}
+
+
+.info h1 {
+    font-size: 50px;
+    color: rgb(47, 48, 1);
+    margin-bottom: 15px;
+}
+
+
+.info p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+
+.info .btn {
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: 1px solid rgb(255, 255, 255);
+    font-size: 20px;
+    background-color: transparent;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+
+.info .btn:hover {
+    opacity: 1;
+    border-color: rgb(47, 48, 1);
+    color: #fff;
+}
+
+
+.info .btn-video {
+    border: 1px solid rgb(47, 48, 1);
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: transparent;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.info .btn-video:hover {
+    border-color: white;
+}

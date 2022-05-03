@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: url("background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.header nav {
+    width: 86%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.header nav ul li {
+    display: inline-block;
+    margin: 25px 10px;
+    list-style: none;
+}
+
+.header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    margin: auto;
+}
+
+.header nav ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: rgb(176, 181, 184);
+    bottom: -10px;
+    left: 0;
+    transition: .3s ease;
+}
+
+.header nav ul li a:hover::after {
+    width: 100%;
+}
+
+.logo {
+    width: 250px;
+    cursor: pointer;
+}
+
+
+.info {
+    margin-left: 8%;
+    margin-top: 15%;
+}
+
+.info h1 {
+    font-size: 80px;
+    color: rgb(176, 181, 184);
+    margin-bottom: 15px;
+}
+
+
+.info p {
+    font-size: 25px;
+    color: rgb(73, 135, 192);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.info .btn {
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 15px;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: .3s ease;
+    margin-right: 30px;
+}
+
+
+.info .btn:hover {
+    color: whitesmoke;
+    border-color: rgb(73, 135, 192);
+    opacity: 1;
+}
+
+
+.social {
+    position: fixed;
+    top: 40%;
+    right: 0;
+    margin-right: 10px;
+}
+
+
+.social .social-links a {
+    color: #fff;
+    display: block;
+    padding: 15px;
+    font-size: 25px;
+    text-align: center;
+    transition: 0.3s ease;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+.social .social-links a:hover {
+    color: rgb(8, 151, 240);
+}
